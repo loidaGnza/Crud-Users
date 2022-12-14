@@ -1,0 +1,200 @@
+html{
+    box-sizing: border-box;
+}
+
+*,*::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    margin:0;
+    font-family: 'Barlow', sans-serif;
+    background-image: url(./assets/claro1.jpg);
+background-repeat: no-repeat;
+min-height: 100vh;
+background-size: cover;
+
+}
+
+input{
+    outline: none;
+}
+
+h1, h2, h3, h4, h5, h6{
+  margin: 0;
+}
+
+.header-container{
+  display: flex;
+  justify-content:space-between;
+  padding: 10px;
+}
+
+.header_btn{
+  padding: 8px 12px;
+  background-color:#ff6680;
+  color:azure;
+  border: none;
+  border-radius:5px ;
+  cursor: pointer;
+  transition: 150ms filter ease-in-out;
+}
+
+
+.header_btn:hover {
+  filter:brightness(1.2)
+}
+
+.users-container{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.user{
+  border: 1px solid #ffb3c8;
+  padding:20px;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+transform:100ms box-shadow ease-in-out ;
+}
+
+.user:hover{
+  box-shadow: 1px 1px 10px #0003;
+}
+
+.user-title{
+  margin-bottom: 20px;
+}
+
+.user__list{
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.user__item{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.user__item span{
+  color:#b34766;
+text-transform: uppercase;
+}
+
+.user__item span i{
+  color: #b347a8;
+  margin-right: 4px;
+}
+
+.user__container-btn{
+  display: flex;
+  gap:8px;
+  justify-content: flex-end;
+}
+
+.user__btn{
+  border: none;
+  padding: 5px 8px;
+  border-radius: 4px;
+  font-size: 25px;
+  cursor: pointer;
+  transition:100ms transform ease-in-out;
+}
+
+.user__btn:hover{
+transform: scale(1.10);
+}
+
+.user__btn:first-child{
+  background-color: red;
+  color: white;
+}
+
+.user__btn:last-child{
+  color:#ff8f66;
+}
+.container-form{
+  position: fixed;
+    background-color:#ff8f6657;
+  backdrop-filter: blur(2px);
+  z-index: 2;
+  top:0;
+  min-height: 100vh;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.disable-form{
+  display: none;
+}
+
+.form{
+  background-color:#ebc3d1;
+  padding: 15px;
+  border-radius: 10px;
+  width: 300px;
+  position: relative;
+}
+
+.form-title{
+font-size:28px ;
+}
+
+.form__x{
+  position: absolute;
+top:10px;
+right: 10px;
+color: red;
+font-size: 30px;
+cursor: pointer;
+transition: 100ms transform ease-in-out;
+}
+
+.form__x:hover{
+transform: scale(1.1);
+}
+
+.form__div{
+  display: flex;
+  flex-direction: column;
+  gap:5px;
+  margin-top: 15px;
+}
+
+.form_lable{
+  font-size: 13px;
+  color:#cb4f73;
+}
+
+.form_input{
+  padding: 8px 10px;
+  font-family: inherit;
+  background-color: #aaaaaa79;
+  border: 1px solid rgba(0, 0, 0, 0.003);
+  border-radius: 8px;
+}
+
+.form_btn{
+  width: 100%;
+  padding: 8px 12px;
+  background-color:#ff6680 ;
+  border: none;
+  margin-top: 20px;
+  border-radius:5px ;
+  cursor: pointer;
+  transition: 150ms filter ease-in-out;
+}
+
+.form_btn:hover{
+  filter:brightness(1.2)
+}
